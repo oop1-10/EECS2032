@@ -1,0 +1,8 @@
+./USBPortNames.sh
+./Lab2/lab2_1.sh~
+./Lab2/lab2_1.sh
+./Lab2/lab2_3.sh~
+./Lab2/lab2_3.sh
+./Lab2/lab2_4.sh~
+./Lab2/lab2_4.sh
+./shift_test.sh

@@ -1,0 +1,23 @@
+(a)
+   70  echo hi there
+   71  ps
+   72  pwd
+   73  cd EECS2032
+   74  history 5 > lab1.txt
+
+(b)
+vi t1.txt
+wc t1.txt
+ 1 11 50 t1.txt
+
+(c)
+ls -1 | grep -i "a" | wc -l
+
+(d)
+tail -n 1 t1.txt
+
+(e)
+find ~ -type f -executable | wc -l
+
+(f)
+history | grep "ls"

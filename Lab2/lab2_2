@@ -1,0 +1,9 @@
+a) ls -a | grep "^\."
+
+b) cat "*notes?.txt"
+
+c) mv 'hello$world.txt' greetings.txt
+
+d) find data -type d ! -name "temp"
+
+e) find . -type f | grep "\.sh" > scripts_list.txt

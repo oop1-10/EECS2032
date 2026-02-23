@@ -1,0 +1,4 @@
+#!/bin/bash
+echo $* || echo "No arguments provided" && exit
+read -p "Please enter an integer: " integer
+echo "The argument at position $integer is: $$integer" || echo "No argument has been provided at position $integer."

@@ -1,0 +1,17 @@
+(a)
+history 5
+
+(b)
+wc -l t1.txt
+
+(c)
+ls -1 | grep -i "a" | wc -l
+
+(d)
+tail -n 1 t1.txt
+
+(e)
+find ~ -type f -executable | wc -l
+
+(f)
+history | grep "ls"

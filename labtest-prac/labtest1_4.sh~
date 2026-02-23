@@ -1,0 +1,7 @@
+#!/bin/bash
+
+amount=$1
+
+while read -r inva.txt; do
+
+done

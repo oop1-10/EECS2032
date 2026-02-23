@@ -1,0 +1,15 @@
+#!/bin/bash
+
+read input1 input2 input3
+
+max="$input1"
+
+if [ $input2 -gt $max ]; then
+	max="$input2"
+fi
+
+if [ $input3 -gt $max ]; then
+	max="$input3"
+fi
+
+echo "Max is $max"

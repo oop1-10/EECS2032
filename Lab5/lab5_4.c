@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+void main() {
+  int n;
+  int m;
+
+  scanf("%d %d", &n, &m);
+
+  if (n > 50 || m > 50 || n < 1 || m < 1) {
+    printf("Rows or columns cannot be bigger than 50 or less than 1.\n");
+    return;
+  }
+
+  int arr[n * m];
+
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < m; j++) {
+      scanf("%d", (arr + i * m + j));
+    }
+  }
+  
+  int row_index = 1;
+  
+  for (int *x = arr; x < arr + n * m; x += m) {
+    int *y;
+    for (y = x; y < x + m - 1; y++) {
+      if (*y > *(y + 1)) {
+        break;
+      }
+    }
+    
+    if (y == x + m - 1) {
+      printf("%5d\n", row_index);
+    }
+    row_index++;
+  }
+}

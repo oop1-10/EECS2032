@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+void applyPotion(int *p1, int *p2, float *p3, int *p4) {
+  if (*p1 <= 25) {
+    *p2 *= 2;
+  } else if (*p1 <= 40) {
+    *p3 *= 0.9;
+  } else {
+    *p4 += 5;
+  }
+}
+
+void main() {
+  int age;
+  int strength;
+  float weight;
+  int wisdom;
+  
+  printf("Enter age: ");
+  scanf("%d", &age);
+  printf("Enter strength level: ");
+  scanf("%d", &strength);
+  printf("Enter weight: ");
+  scanf("%f", &weight);
+  printf("Enter wisdom level: ");
+  scanf("%d", &wisdom);
+
+  applyPotion(&age, &strength, &weight, &wisdom);
+
+  printf("After drinking the Reversal Potion: \nAge: %d\nStrength: %d\nWeight: %.2f\nWisdom: %d\n", age, strength, weight, wisdom);
+}

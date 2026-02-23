@@ -1,0 +1,5 @@
+P101	WidgetA	12.50	47
+P102	WidgetB	15.75	50
+P103	WidgetC	9.99	53
+P104	WidgetD	20.00	45
+P105	WidgetE	18.25	48
