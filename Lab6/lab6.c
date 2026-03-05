@@ -120,7 +120,7 @@ void main(int argc, char *argv[]) {
   if (argc == 2) {
     n = atoi(argv[1]);
   } else if (argc > 2) { // if the user entered more than 2 arguments, error
-    print("Must enter 1 or no arguments.");
+    printf("Must enter 1 or no arguments.");
     return;
   } else { // if the user entered in no arguments, prompt the user for n
     printf("Enter the number of random integers to generate: ");
